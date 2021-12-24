@@ -1,0 +1,41 @@
+
+    <!-- <a  class="list-group-item clearfix  {{product.visible}}" (click)="onSelected()">
+        <div class="col-md-3">
+            <span class="pull-left inline-block" >
+                <img src="{{product.imagePath}}" alt="{{product.name}}" class="img-responsive"
+                style="max-height:300px">
+            </span>
+        </div>
+        <div class="col-md-5">
+            <h4 class="list-group-item-heading inline-block" align="center">{{product.name}}</h4>
+        </div> 
+        <div class="col-md-1">
+            <h4 class="list-group-item-heading inline-block" align="center">{{product.count}}</h4>
+        </div>    
+        <div  class="col-md-3">
+            <button class="btn btn-danger btn-block ">remove</button>
+        </div>
+        
+    </a>
+    -->
+    <div *ngIf="product.count > 0">
+        <div class="card mb-3 " >
+            <div class="row g-0 ">
+                <div class="col-md-3">
+                    <img src="{{product.imagePath}}" alt="{{product.name}}" class="img-fluid rounded-start" style="max-height: 100px;max-width: 100px;">
+                </div>
+                <div class="col-md-6">
+                    <div class="card-body">
+                    <h5 class="list-group-item-heading inline-block">{{product.count}}</h5>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card-body">
+                    
+                    <h5 class="list-group-item-heading inline-block">{{product.name}}</h5>
+                    <button class="btn btn-danger btn-block inline-block align-items-right " (click)="onSelected()">remove</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

@@ -1,0 +1,14 @@
+
+<div class="row">
+    <div class="col-md-12">
+        <h3 align="center">Cart</h3>
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-12">
+        <app-carts-list
+        *ngFor="let product of Products"
+        [product]="product"></app-carts-list>
+        
+    </div>
+</div>
